@@ -1,0 +1,225 @@
+Fri,25 Mar 2022 23:02:25 log.py[line:21] DEBUG debug
+Fri,25 Mar 2022 23:02:25 log.py[line:22] INFO info
+Fri,25 Mar 2022 23:02:25 log.py[line:23] WARNING warning
+Fri,25 Mar 2022 23:02:25 log.py[line:24] ERROR error
+Fri,25 Mar 2022 23:02:25 log.py[line:25] CRITICAL critical
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/1/vote/
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:86] INFO 请求方式：GET
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:30] INFO 请求参数：{'choice': 1}
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:87] INFO 请求地址：http://127.0.0.1:8000/poll/
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:88] INFO 请求参数：
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:89] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "GET /poll/ HTTP/1.1" 200 119
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:108] INFO get_poll-1
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:109] INFO 通过
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:110] INFO 期望返回结果：how old are you?
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:111] INFO 实际返回结果：{'status': '200', 'message': 'success', 'data': {'1': '元旦去哪玩？', '2': 'how old are you?'}}
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/1/vote/ HTTP/1.1" 200 39
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:47] INFO post_vote-1
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:49] INFO 期望返回结果：success
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:50] INFO 实际返回结果：{'status': '200', 'message': 'success'}
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/1/vote/
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:30] INFO 请求参数：{'choice': 5}
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/1/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:47] INFO post_vote-2
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:49] INFO 期望返回结果：The problem is not the choice id
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:50] INFO 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:30] INFO 请求参数：{'choice': 4}
+Fri,25 Mar 2022 23:02:25 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:25 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 39
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:47] INFO post_vote-3
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:49] INFO 期望返回结果：success
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:50] INFO 实际返回结果：{'status': '200', 'message': 'success'}
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:30] INFO 请求参数：{'choice': 7}
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:26 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:26 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:47] INFO post_vote-4
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:49] INFO 期望返回结果：The problem is not the choice id
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:50] INFO 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:30] INFO 请求参数：{'choice': 8}
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:26 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:26 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:62] ERROR 测试给问题2不存在选项投票
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:63] ERROR 失败
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:64] ERROR 期望返回结果：success
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:65] ERROR 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:86] INFO 请求方式：GET
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:87] INFO 请求地址：http://127.0.0.1:8000/poll/
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:88] INFO 请求参数：
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:89] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:26 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:26 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "GET /poll/ HTTP/1.1" 200 119
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:108] INFO get_poll-1
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:109] INFO 通过
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:110] INFO 期望返回结果：how old are you?
+Fri,25 Mar 2022 23:02:26 TestRequest.py[line:111] INFO 实际返回结果：{'status': '200', 'message': 'success', 'data': {'1': '元旦去哪玩？', '2': 'how old are you?'}}
+Fri,25 Mar 2022 23:02:30 log.py[line:21] DEBUG debug
+Fri,25 Mar 2022 23:02:30 log.py[line:22] INFO info
+Fri,25 Mar 2022 23:02:30 log.py[line:23] WARNING warning
+Fri,25 Mar 2022 23:02:30 log.py[line:24] ERROR error
+Fri,25 Mar 2022 23:02:30 log.py[line:25] CRITICAL critical
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:86] INFO 请求方式：GET
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/1/vote/
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:87] INFO 请求地址：http://127.0.0.1:8000/poll/
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:30] INFO 请求参数：{'choice': 1}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:88] INFO 请求参数：
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:89] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "GET /poll/ HTTP/1.1" 200 119
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:108] INFO get_poll-1
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:109] INFO 通过
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:110] INFO 期望返回结果：how old are you?
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:111] INFO 实际返回结果：{'status': '200', 'message': 'success', 'data': {'1': '元旦去哪玩？', '2': 'how old are you?'}}
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/1/vote/ HTTP/1.1" 200 39
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:47] INFO post_vote-1
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:49] INFO 期望返回结果：success
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:50] INFO 实际返回结果：{'status': '200', 'message': 'success'}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/1/vote/
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:30] INFO 请求参数：{'choice': 5}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/1/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:47] INFO post_vote-2
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:49] INFO 期望返回结果：The problem is not the choice id
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:50] INFO 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:30] INFO 请求参数：{'choice': 4}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 39
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:47] INFO post_vote-3
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:49] INFO 期望返回结果：success
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:50] INFO 实际返回结果：{'status': '200', 'message': 'success'}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:30] INFO 请求参数：{'choice': 7}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:47] INFO post_vote-4
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:49] INFO 期望返回结果：The problem is not the choice id
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:50] INFO 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:30] INFO 请求参数：{'choice': 8}
+Fri,25 Mar 2022 23:02:30 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:30 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:31 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:62] ERROR 测试给问题2不存在选项投票
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:63] ERROR 失败
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:64] ERROR 期望返回结果：success
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:65] ERROR 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:86] INFO 请求方式：GET
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:87] INFO 请求地址：http://127.0.0.1:8000/poll/
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:88] INFO 请求参数：
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:89] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:31 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:31 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "GET /poll/ HTTP/1.1" 200 119
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:108] INFO get_poll-1
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:109] INFO 通过
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:110] INFO 期望返回结果：how old are you?
+Fri,25 Mar 2022 23:02:31 TestRequest.py[line:111] INFO 实际返回结果：{'status': '200', 'message': 'success', 'data': {'1': '元旦去哪玩？', '2': 'how old are you?'}}
+Fri,25 Mar 2022 23:02:34 log.py[line:21] DEBUG debug
+Fri,25 Mar 2022 23:02:34 log.py[line:22] INFO info
+Fri,25 Mar 2022 23:02:34 log.py[line:23] WARNING warning
+Fri,25 Mar 2022 23:02:34 log.py[line:24] ERROR error
+Fri,25 Mar 2022 23:02:34 log.py[line:25] CRITICAL critical
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:86] INFO 请求方式：GET
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/1/vote/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:87] INFO 请求地址：http://127.0.0.1:8000/poll/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:30] INFO 请求参数：{'choice': 1}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:88] INFO 请求参数：
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:89] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "GET /poll/ HTTP/1.1" 200 119
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:108] INFO get_poll-1
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:109] INFO 通过
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:110] INFO 期望返回结果：how old are you?
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:111] INFO 实际返回结果：{'status': '200', 'message': 'success', 'data': {'1': '元旦去哪玩？', '2': 'how old are you?'}}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/1/vote/ HTTP/1.1" 200 39
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:47] INFO post_vote-1
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:49] INFO 期望返回结果：success
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:50] INFO 实际返回结果：{'status': '200', 'message': 'success'}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/1/vote/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:30] INFO 请求参数：{'choice': 5}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/1/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:47] INFO post_vote-2
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:49] INFO 期望返回结果：The problem is not the choice id
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:50] INFO 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:30] INFO 请求参数：{'choice': 4}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 39
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:47] INFO post_vote-3
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:49] INFO 期望返回结果：success
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:50] INFO 实际返回结果：{'status': '200', 'message': 'success'}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:30] INFO 请求参数：{'choice': 7}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:47] INFO post_vote-4
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:48] INFO 通过
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:49] INFO 期望返回结果：The problem is not the choice id
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:50] INFO 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:28] INFO 请求方式：POST
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:29] INFO 请求地址：http://127.0.0.1:8000/poll/2/vote/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:30] INFO 请求参数：{'choice': 8}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:31] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "POST /poll/2/vote/ HTTP/1.1" 200 66
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:62] ERROR 测试给问题2不存在选项投票
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:63] ERROR 失败
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:64] ERROR 期望返回结果：success
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:65] ERROR 实际返回结果：{'status': '10022', 'message': 'The problem is not the choice id'}
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:86] INFO 请求方式：GET
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:87] INFO 请求地址：http://127.0.0.1:8000/poll/
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:88] INFO 请求参数：
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:89] INFO 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '8', 'Content-Type': 'application/x-www-form-urlencoded'}
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:228] DEBUG Starting new HTTP connection (1): 127.0.0.1:8000
+Fri,25 Mar 2022 23:02:34 connectionpool.py[line:456] DEBUG http://127.0.0.1:8000 "GET /poll/ HTTP/1.1" 200 119
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:108] INFO get_poll-1
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:109] INFO 通过
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:110] INFO 期望返回结果：how old are you?
+Fri,25 Mar 2022 23:02:34 TestRequest.py[line:111] INFO 实际返回结果：{'status': '200', 'message': 'success', 'data': {'1': '元旦去哪玩？', '2': 'how old are you?'}}
