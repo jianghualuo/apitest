@@ -180,7 +180,7 @@ workbook.close()
 msg = """
 <table width="800" border="0" cellspacing="0" cellpadding="4">
     <tr>
-        <td bgcolor="#CECFAD" height="20" style="font-size:20px">接口自动化测试报告    <a href="http://127.0.0.1:8000/admin/"> 更多内容>></a></td>
+        <td bgcolor="#CECFAD" height="20" style="font-size:20px">接口自动化测试报告    <a href="http://localhost:8080/job/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"> 更多内容>></a></td>
     </tr>
     <tr>
      <td bgcolor="#EFEBDE" height="100" style="font-size:13px">
